@@ -4,7 +4,7 @@
 
 ## 预览
 
-| ![tex](imgs\babychem-tex.png) | ![pdf](imgs\babychem-pdf.png) |
+| ![tex](imgs/babychem-tex.png) | ![pdf](imgs/babychem-pdf.png) |
 | --- | --- |
 
 ## 遇到的困难
