@@ -153,8 +153,10 @@ $\qquad\qquad\underset{\text{进攻者}}{\overset{0\rightarrow+1}{\oplus}O}
     \text{如今常使用计算软件表征分子的静电势}
 \end{cases}$
 
-\section{原子轨道简述，价层电子互斥理论，杂化轨道理论}
+\section{原子轨道，价层$e^-$，杂化轨道}
 \label{sec:1.2}
+原子轨道简述，价层电子互斥理论，杂化轨道理论
+
 以$H_2O$的Lewis结构式为例
 $\chemfig{O(-[:-140,0.8]H)(-[:-40,0.8]H)}
 \begin{cases}
@@ -200,7 +202,7 @@ H\ket{\Psi}=E\ket{\Psi}
         \begin{tikzpicture}[baseline=(current bounding box.center),scale=.5]
             \coordinate (center) at (0,0);
             \foreach \r in {1, 2} {\draw (center) circle (\r cm);}
-            \draw[red, dashed] (center) circle (1.5);
+            \draw[red] (center) circle (1.5);
             \draw[->](1.5,0)--(2.5,-0.8)node[right]{节面};
             \node[right] at (2,1) {2s};
             \node[right] at (0,0) {1s};
