@@ -58,24 +58,24 @@ $\ce{e^- + *CH_3 -> ^{\ominus}CH_3}$
 异裂思想: $\ce{A-B ->[\text{异裂}]}\underset{\text{相反电性}}{\ce{A^{\oplus} + B^{\ominus}}}$
 
 $\chemfig{
-    C(-[:0,0.8]H)
-    (-[:180]C([:0,0.8])(-[:180,0.8]H)(-[:-90,0.8]H)(-[:90,0.8]H))
-    (-[:-90,0.8]H)(-[:90,0.8]H)}
+    C(-[:0]H)
+    (-[:180]C([:0])(-[:180]H)(-[:-90]H)(-[:90]H))
+    (-[:-90]H)(-[:90]H)}
     \ce{->}
     \underset{\text{1孤对电子}}{\underset{\text{3对成键电子}}
-    {^{\ominus}\chemfig{C(-[:0,0.8]H)([:180,0.8])(-[:-90,0.8]H)(-[:90,0.8]H)}}}
+    {^{\ominus}\chemfig{C(-[:0]H)([:180])(-[:-90]H)(-[:90]H)}}}
     +
     \underset{\text{无孤对电子}}{\underset{\text{3对成键电子}}
-    {^{\oplus}\chemfig{C(-[:0,0.8]H)([:180,0.8])(-[:-90,0.8]H)(-[:90,0.8]H)}}}$
+    {^{\oplus}\chemfig{C(-[:0]H)([:180])(-[:-90]H)(-[:90]H)}}}$
 
 \subsection{标记形式电荷}
 \label{sec:1.1.4}
 
-\chemfig{C^{\oplus}(-[:0,0.8])(-[:180,0.8])([:-90,0.8])(-[:90,0.8])}
+\chemfig{C^{\oplus}(-[:0])(-[:180])([:-90])(-[:90])}
 \qquad
-\chemfig{C^{*}(-[:0,0.8])(-[:180,0.8])([:-90,0.8])(-[:90,0.8])}
+\chemfig{C^{*}(-[:0])(-[:180])([:-90])(-[:90])}
 \qquad
-\chemfig{C^{\ominus}(-[:0,0.8])(-[:180,0.8])([:-90,0.8])(-[:90,0.8])}
+\chemfig{C^{\ominus}(-[:0])(-[:180])([:-90])(-[:90])}
 
 形式电荷(与真实电荷有区别)，某些情况真的只是“形式电荷”
 
@@ -83,18 +83,18 @@ $\chemfig{
 形式电荷=主族序数-不包括单电子的未共享电子数
 $\underset{\textcolor{red}{\text{也会把单电子看作化学键}}}{\underset{\textcolor{red}{\text{化学键数}}}{\underline{\text{$-\frac{1}{2}$成键电子数}}}}$
 
-$\underset{4-2-4=0}{\chemfig{C(-[:0,0.8])(-[:180,0.8])([:-90,0.8])(-[:90,0.8])}}
+$\underset{4-2-4=0}{\chemfig{C(-[:0])(-[:180])([:-90])(-[:90])}}
 \begin{matrix}
-    \ce{->[\text{得$e^-$}]}\chemfig{C^{\ominus}(-[:0,0.8])(-[:180,0.8])([:-90,0.8])(-[:90,0.8])}:4-2-3=-1 \\
-    \ce{->[\text{失$e^-$}]}\chemfig{C^{\oplus}(-[:0,0.8])(-[:180,0.8])([:-90,0.8])(-[:90,0.8])}:4-0-3=+1
+    \ce{->[\text{得$e^-$}]}\chemfig{C^{\ominus}(-[:0])(-[:180])([:-90])(-[:90])}:4-2-3=-1 \\
+    \ce{->[\text{失$e^-$}]}\chemfig{C^{\oplus}(-[:0])(-[:180])([:-90])(-[:90])}:4-0-3=+1
 \end{matrix}$
 
-$\chemfig{O^{\oplus}(-[:0,0.8])(-[:180,0.8])(-[:90,0.8])}\quad 6-2-3=+1$
+$\chemfig{O^{\oplus}(-[:0])(-[:180])(-[:90])}\quad 6-2-3=+1$
 
 \qquad $\downarrow$
 
-\quad $\ce{H_3O^{\oplus}}\Rightarrow\chemfig{O(-[:90,0.8]H)(-[:-150,0.8]H)(-[:-30,0.8]H)}(sp^3)\rightarrow$对于
-$\underset{\chemfig{O^{\oplus}(-[:90,0.8]H)(-[:-150,0.8]H)(-[:-30,0.8]H)}\checkmark}{\ce{H_3O^+,}}$是不标O上的孤对电子
+\quad $\ce{H_3O^{\oplus}}\Rightarrow\chemfig{O(-[:90]H)(-[:-150]H)(-[:-30]H)}(sp^3)\rightarrow$对于
+$\underset{\chemfig{O^{\oplus}(-[:90]H)(-[:-150]H)(-[:-30]H)}\checkmark}{\ce{H_3O^+,}}$是不标O上的孤对电子
 
 \subsection{“复杂”分子的Lewis结构式}
 \label{sec:1.1.5}
@@ -158,7 +158,7 @@ $\qquad\qquad\underset{\text{进攻者}}{\overset{0\rightarrow+1}{\oplus}O}
 原子轨道简述，价层电子互斥理论，杂化轨道理论
 
 以$H_2O$的Lewis结构式为例
-$\chemfig{O(-[:-140,0.8]H)(-[:-40,0.8]H)}
+$\chemfig{O(-[:-140]H)(-[:-40]H)}
 \begin{cases}
     \underset{\text{成键的本质?}\rightarrow Lewis \rightarrow VBT \rightarrow MO}{\text{优点:知道较为确切成键情况}} \\
     \text{缺点:}\underset{\text{杂化VSEPR}}{\underset{\downarrow}{\underset{\text{分子的$\underline{\text{空间结构}}$?}}{\text{运动范围未知}}}}
