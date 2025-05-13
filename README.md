@@ -1,3 +1,5 @@
+# BabyChem基础有机化学
+
 ## 想法
 
 将手写笔记用latex写出来，目前完成第一章
@@ -24,12 +26,9 @@
 
 * [szaboqc](https://github.com/Usu171/szaboqc)
 
-## BabyChem基础有机化学
+## 文件下载&讲解视频
 
-**[讲解视频](https://www.bilibili.com/video/BV11U4y1x7GL/?spm_id_from=333.1387.homepage.video_card.click&vd_source=d848090dc43c31d7970651436f34cfa5)**  
+**[BabyChem基础有机化学手写笔记](https://github.com/Benzyl-titanium/BabyChem/releases/download/organic-chemistry/BabyChem.pdf)**
 
-![讲解视频](imgs/babychem.png)
+[![讲解视频](imgs/babychem.png)](https://www.bilibili.com/video/BV11U4y1x7GL/?spm_id_from=333.1387.homepage.video_card.click&vd_source=d848090dc43c31d7970651436f34cfa5)
 
-## BabyChem基础有机化学手写笔记
-
-**[下载pdf](https://github.com/Benzyl-titanium/BabyChem/releases/download/organic-chemistry/BabyChem.pdf)**
