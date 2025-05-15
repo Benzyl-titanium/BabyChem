@@ -23,7 +23,7 @@
 
 * VSCode拓展下载LaTeX Workshop
 * 设置>搜索`Latex-workshop › Latex: Recipes`>在 settings.json 中编辑
-* 将内容替换成目录下的settings.json
+* 将内容替换成[.vscode/settings.json](.vscode/settings.json)
 * 在main.tex中`Ctrl`+`Alt`+`B`编译成PDF
 
 ## 致谢
