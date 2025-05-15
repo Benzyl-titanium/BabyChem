@@ -4,7 +4,7 @@
 % Version 0.1 (5/4/20)
 %
 \RequirePackage{luatex85,shellesc}
-\usepackage[top=1.7cm,bottom=1.5cm,left=1cm,right=1cm,headsep=18pt,papersize={13.8176cm,21.6cm}
+\usepackage[top=1.7cm,bottom=1.5cm,left=1cm,right=1cm,headsep=20pt,papersize={14.8cm,21cm}
 ]{geometry}
 \usepackage{indentfirst} 
 \usepackage{graphicx} % Required for including pictures
@@ -39,6 +39,7 @@
 \usepackage{anyfontsize}
 \usepackage{amssymb}
 \usepackage{bm}
+\usepackage{multicol}
 
 \usepackage{mathtools} % For *rcases* environment
 \usepackage[scr=boondoxo, scrscaled=1]{mathalfa}
@@ -57,10 +58,11 @@
 \ctexset{
   chapter={
   	name = {第,章},
-  	format = \Large\bfseries\raggedright,
+  	beforeskip = -1.5cm,
+  	format = \vspace*{-1.5cm}\Large\bfseries\raggedright,
   	aftername = \par\bigskip},
   section/format = \fontsize{8.5pt}{\baselineskip}\selectfont\bfseries\raggedright,
-  subsection/format = \fontsize{8pt}{\baselineskip}\selectfont\bfseries\raggedright
+  subsection/format = \fontsize{7pt}{\baselineskip}\selectfont\bfseries\raggedright
 }
 
 %-----------------------------------------------------------------
