@@ -6,17 +6,31 @@
 \usepackage{amsmath}
 \usepackage{mhchem}
 \usepackage{ulem}
+\usepackage{graphicx,grffile}
+\usepackage{float} %设置图片浮动位置的宏包
+\usepackage{subfigure} %插入多图时用子图显示的宏包
 %\linespread{1.2}
+
+
 \input{structure}
 
 \date{\today}
+
+
 \begin{document}
 \frontmatter
-\begin{multicols}{2}
-\tableofcontents
-\end{multicols}
-\clearpage
 
+\include{./chapters/home}
+\setcounter{page}{0}
+
+\begin{multicols}{2}
+
+\tableofcontents
+\setcounter{page}{0}
+\end{multicols}
+
+\clearpage
 \mainmatter
+
 \include{./chapters/chap1}
 \end{document}
