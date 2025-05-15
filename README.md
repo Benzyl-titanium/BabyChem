@@ -6,7 +6,12 @@
 
 ## 进度
 
-* 第一章
+- :white_check_mark: 第一章
+    - :white_check_mark: 1.1-1.3
+- :large_orange_diamond: 第一章
+    - :white_check_mark: 2.1-2.3
+    - :large_orange_diamond: 2.4
+    - :black_square_button: 2.5
 
 ## [预览](main.pdf)
 
