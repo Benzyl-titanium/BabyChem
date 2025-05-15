@@ -6,9 +6,9 @@
 
 ## 进度
 
-* [第一章](main.pdf)
+* 第一章
 
-## 预览
+## [预览](main.pdf)
 
 | ![tex](imgs/babychem-tex.png) | ![pdf](imgs/babychem-pdf.png) |
 | --- | --- |
