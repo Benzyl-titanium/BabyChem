@@ -199,7 +199,7 @@ H\ket{\Psi}=E\ket{\Psi}
     \end{cases}$
     \hfill
     \begin{subcaptionbox}
-        \begin{tikzpicture}[baseline=(current bounding box.center),scale=.5]
+        \begin{tikzpicture}[scale=.5]
             \coordinate (center) at (0,0);
             \foreach \r in {1, 2} {\draw (center) circle (\r cm);}
             \draw[red] (center) circle (1.5);
@@ -221,7 +221,7 @@ H\ket{\Psi}=E\ket{\Psi}
 \end{matrix}\right\}\underset{\text{(相位)}}{\text{是否拥有节面}}$
 
 \begin{figure}[H]
-    \begin{tikzpicture}[baseline=(current bounding box.center),scale=.7]
+    \begin{tikzpicture}[scale=.7]
         \draw[-] (0,.5)--(3,.5)node[above,pos=.5]{正相位}node[right]{$\Psi>0$};
         \draw[->] (0,0)--(3,0)node[right]{x};
     \end{tikzpicture}
@@ -243,7 +243,7 @@ H\ket{\Psi}=E\ket{\Psi}
     \centering
     \begin{subcaptionbox}
         \centering
-        \begin{tikzpicture}[baseline=(current bounding box.center),scale=.6]
+        \begin{tikzpicture}[scale=.6]
             \draw[->] (1,1)--(-1,-1)node[below]{x};
             \shade[ball color=black!20] (.2,.2)circle (.4);
             \draw[->] (-1.5,0)--(1.5,0)node[below]{y};
@@ -255,7 +255,7 @@ H\ket{\Psi}=E\ket{\Psi}
     \hfill
     \begin{subcaptionbox}
         \centering
-        \begin{tikzpicture}[baseline=(current bounding box.center),scale=.6]
+        \begin{tikzpicture}[scale=.6]
             \draw[->] (0,-1.5)--(0,1.5)node[right]{z};
             \node[below] at (0,-2) {py};
             \shade[ball color=black!20] (-.3,0)circle (.4);
@@ -267,7 +267,7 @@ H\ket{\Psi}=E\ket{\Psi}
     \hfill
     \begin{subcaptionbox}
         \centering
-        \begin{tikzpicture}[baseline=(current bounding box.center),scale=.6]
+        \begin{tikzpicture}[scale=.6]
             \draw[->] (-1.5,0)--(1.5,0)node[below]{y};
             \shade[ball color=black!20] (0,-.3)circle (.4);
             \draw[->] (1,1)--(-1,-1)node[below]{x};
@@ -283,7 +283,7 @@ H\ket{\Psi}=E\ket{\Psi}
     \end{subcaptionbox}
     
     \begin{subcaptionbox}
-        \begin{tikzpicture}[baseline=(current bounding box.center),scale=.6]
+        \begin{tikzpicture}[scale=.6]
             \draw[->] (1,1)--(-1,-1)node[below]{x};
             \begin{scope}[rotate around={45:(.29,.29)}]
                 \shade[ball color=black!20] (.29,.29)ellipse (.4 and .2);
@@ -295,7 +295,7 @@ H\ket{\Psi}=E\ket{\Psi}
     \end{subcaptionbox}
     \hfill
     \begin{subcaptionbox}
-        \begin{tikzpicture}[baseline=(current bounding box.center),scale=.6]
+        \begin{tikzpicture}[scale=.6]
             \draw[->] (-1.5,0)--(1.5,0)node[below]{y};
             \shade[ball color=black!20] (-.4,0)ellipse (.4 and .2);
             \shade[draw=black] (.4,0)ellipse (.4 and .2);
@@ -303,7 +303,7 @@ H\ket{\Psi}=E\ket{\Psi}
     \end{subcaptionbox}
     \hfill
     \begin{subcaptionbox}
-        \begin{tikzpicture}[baseline=(current bounding box.center),scale=.6]
+        \begin{tikzpicture}[scale=.6]
             \draw[->] (0,-1.5)--(0,1.5)node[right]{z};
             \shade[ball color=black!20] (0,-.4)ellipse (.2 and .4);
             \shade[draw=black] (0,.4)ellipse (.2 and .4);
@@ -316,8 +316,8 @@ H\ket{\Psi}=E\ket{\Psi}
 \begin{figure}[H]
     \begin{tikzpicture}
         \draw[->] (-1.5,0)--(1.5,0)node[below]{z};
-        \draw[ thick] (0,0) arc (0:-90:1.5 and .5);
-        \draw[ thick, rotate=180] (0,0) arc (0:90:1.5 and -.5);
+        \draw[thick] (0,0) arc (0:-90:1.5 and .5);
+        \draw[thick] (0,0) arc (0:90:-1.5 and .5);
         \draw[-] (-.75,-.25)--(-.75,-.25)node[black]{-};
         \draw[-] (.75,.25)--(.75,.25)node[black]{+};
         \fill [black] (0,0) circle (1.5pt) node[below] {0};
@@ -344,7 +344,7 @@ H\ket{\Psi}=E\ket{\Psi}
 
 \begin{figure}[H]
     \centering
-    \begin{tikzpicture}[baseline=(current bounding box.center),scale=.5]
+    \begin{tikzpicture}[scale=.5]
         \draw (1.6,2.5)--++(.5,0)node{$\uparrow$}-- ++(.5,0)node[right]{2p};
         \draw (.4,2.5)--++(.5,0)node{$\uparrow$}-- ++(.5,0);
         \draw (1,1.5)--node{$\uparrow\downarrow$}+(1,0)node[right]{2s};
@@ -380,7 +380,7 @@ $\begin{cases}
         \centering
         \begin{tikzpicture}[baseline=(current bounding box.center),scale=.6]
             \draw[draw=black] (1.3,1)ellipse (.3 and .6);
-            \chemfig{N(-[:-90,1.2]H)(-[:180,1.2]H)(-[:0,1.2]H)};
+            \chemfig[atom sep=2.4em]{N(-[:-90]H)(-[:180]H)(-[:0]H)};
             \draw[->] (3,0)--(5.5,0)node[above,pos=.5]{不考虑}node[below,pos=.5]{斥力大小};
             \fill (1.4,.6) circle (1pt);
             \fill (1.2,.6) circle (1pt);
@@ -390,7 +390,7 @@ $\begin{cases}
         \centering
         \begin{tikzpicture}[baseline=(current bounding box.center),scale=.6]
             \draw[draw=black] (.9,1)ellipse (.3 and .6);
-            \chemfig{N(-[:-80,1.2]H)(-[:-30,1.2]H)(-[:-130,1.2]H)};
+            \chemfig[atom sep=2.4em]{N(-[:-80]H)(-[:-30]H)(-[:-130]H)};
             \draw[->] (3.5,.2)--(5.5,.2);
             \fill (1,.6) circle (1pt);
             \fill (.8,.6) circle (1pt);
@@ -401,7 +401,7 @@ $\begin{cases}
         \centering
         \begin{tikzpicture}[baseline=(current bounding box.center),scale=.6]
             \draw[draw=black] (.9,1)ellipse (.3 and .6);
-            \chemfig{N(-[:-80,1.2]H)(-[:-30,1.2]H)(-[:-130,1.2]H)};
+            \chemfig[atom sep=2.4em]{N(-[:-80]H)(-[:-30]H)(-[:-130]H)};
             \fill (1,.6) circle (1pt);
             \fill (.8,.6) circle (1pt);
             \draw[<->] (1.5,-.2) arc (0:25:3)node[right,pos=.5]{$\theta_1$};
@@ -448,7 +448,7 @@ $m\begin{cases}
     \centering
     \begin{subcaptionbox}
         \centering
-        \begin{tikzpicture}[baseline=(current bounding box.center),scale=.6]
+        \begin{tikzpicture}[scale=.6]
             \draw[-] (.5,-1)--(-.5,-1);
             \draw[-] (-.5,-1)--(0,1);
             \draw[-] (0,1)--(.5,-1);
@@ -472,7 +472,7 @@ $m\begin{cases}
     \end{subcaptionbox}
     \hfill
     \begin{subcaptionbox}
-        \begin{tikzpicture}[baseline=(current bounding box.center),scale=.7]
+        \begin{tikzpicture}[scale=.7]
             \draw[->] (0,-2)--(0,2)node[right]{$\vec{\tau}$};
             \draw[-] (-.6,.6)--(1.8,.6);
             \draw[-] (-.6,.6)--(-1.8,-.6);
@@ -501,7 +501,7 @@ $m\begin{cases}
     \end{subcaptionbox}
     \hfill
     \begin{subcaptionbox}
-        \begin{tikzpicture}[baseline=(current bounding box.center),scale=.7]
+        \begin{tikzpicture}[scale=.7]
             \draw[->] (-2,0)--(2,0);
             \draw[-] (-.6,.6)--(1.8,.6);
             \draw[-] (-.6,.6)--(-1.8,-.6);
@@ -539,7 +539,7 @@ $\underset{\text{孤对电子数}}{AX_n:}^nLp=\overset{\textcolor{red}{\text{价
 \underset{\textcolor{red}{\text{配体}}}{\underset{\textcolor{red}{\downarrow}}{n}}$
 
 \begin{figure}[H]
-    \begin{tikzpicture}[baseline=(current bounding box.center),scale=.5]
+    \begin{tikzpicture}[scale=.5]
         \draw (2.8,2.5)--++(1,0)node[right]{2p};
         \draw (1.6,2.5)--++(.5,0)node{$\uparrow$}-- ++(.5,0);
         \draw (.4,2.5)--++(.5,0)node{$\uparrow$}-- ++(.5,0);
@@ -551,7 +551,7 @@ $\underset{\text{孤对电子数}}{AX_n:}^nLp=\overset{\textcolor{red}{\text{价
 
 \begin{figure}[H]
     \qquad
-    \begin{tikzpicture}[baseline=(current bounding box.center),scale=.5]
+    \begin{tikzpicture}[scale=.5]
         \draw[->] (0,0)--(0,4)node[right]{Eorb};
         \draw (.5,1.5)--++(.5,0)node{$\uparrow$}-- ++(.5,0)node[below]{$sp^3$};
         \draw (1.7,1.5)--++(.5,0)node{$\uparrow$}-- ++(.5,0)node[below]{$sp^3$};
@@ -668,7 +668,7 @@ $\left.\begin{matrix}
 \subsection{充满轨道与空轨道}
 \label{sec:1.3.1}
 \begin{figure}[H]
-    \begin{tikzpicture}[baseline=(current bounding box.center),scale=.5]
+    \begin{tikzpicture}[scale=.5]
         \draw (1,4)--++(1,0)node[right]{$\Psi_4$};
         \draw (1,3)--++(1,0)node[right]{$\Psi_3$};
         \draw (1,2)--node{$\uparrow\downarrow$}+(1,0)node[right]{$\Psi_2$};
@@ -730,7 +730,7 @@ $\begin{cases}
 \text{能量关系:}E^*_{\sigma}>E^*_{\pi}>\overset{\textcolor{red}{\text{非键}}}{\overset{\textcolor{red}{\uparrow}}{E_n}}>E_{\pi}>E_{\sigma}$
 
 \begin{figure}[H]
-    \begin{tikzpicture}[baseline=(current bounding box.center),scale=.5]
+    \begin{tikzpicture}[scale=.5]
         \draw[->] (0,-2)--(0,5)node[left]{双键的形成}node[right]{Erob};
         \draw (1,-.25)--++(.5,0)node{$\uparrow$}-- ++(.5,0)node[left,pos=0]{$sp^2$};
         \draw[-,dashed] (2,-.25)--(4,5);
@@ -802,7 +802,7 @@ $\begin{cases}
 
 \begin{figure}[H]
     \centering
-    \begin{tikzpicture}[baseline=(current bounding box.center),scale=.4]
+    \begin{tikzpicture}[scale=.4]
         \draw[<-] (0,0)--(0,5)node[above]{结构理论:}node[below,pos=0]{反应理论:};
         \node[above] at (5,5) {Lewis$e^-$配对};
         \node[below] at (5,5) {原子轨道};
