@@ -1,5 +1,7 @@
 # BabyChem基础有机化学
 
+![stats time](https://wakapi.dev/api/badge/Benzyl-titanium/interval:any/project:babychem-tex)
+
 ## 想法
 
 将手写笔记用latex写出来
