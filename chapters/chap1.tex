@@ -6,7 +6,7 @@
 物质
 $\begin{cases}
     \text{中性分子} \\
-    \text{自由基(中性):特殊自由基Cl氯自由基} \\
+    \text{自由基(中性):特殊自由基$\chemfig{\charge{0=\:,90=\:,180=\:,-90=\:}{Cl}}$氯自由基} \\
     \text{离子(带电)}
 \end{cases}$
 
@@ -21,7 +21,7 @@ $\begin{cases}
 $\uwave{\text{八隅体规则}}$:
 尽量配出$8e^-$稳定结构(II周期)
 
-$\chemfig{O(-[:-140]H)(-[:-40]H)}\rightarrow
+$\chemfig{\charge{90=\:,-90=\:}{O}(-[:-140]H)(-[:-40]H)}\rightarrow
 \begin{cases}
     \text{O原子独享}
     \begin{cases}
@@ -73,7 +73,7 @@ $\chemfig{
 
 \chemfig{C^{\oplus}(-[:0])(-[:180])([:-90])(-[:90])}
 \qquad
-\chemfig{C^{*}(-[:0])(-[:180])([:-90])(-[:90])}
+\chemfig{\charge{-90=\.}{C}(-[:0])(-[:180])([:-90])(-[:90])}
 \qquad
 \chemfig{C^{\ominus}(-[:0])(-[:180])([:-90])(-[:90])}
 
@@ -98,12 +98,15 @@ $\underset{\chemfig{O^{\oplus}(-[:90]H)(-[:-150]H)(-[:-30]H)}\checkmark}{\ce{H_3
 
 \subsection{“复杂”分子的Lewis结构式}
 \label{sec:1.1.5}
-CO:
-$\ce{C-O -> C=O ->}\overset{\text{C不满足八隅体规则}}{\ce{O^{\oplus} ->[==] C^{\ominus}}}$
+CO \qquad
+$\chemfig{\charge{0=\.,-90=\.,180=\.,90=\.}{C}(-[:-90,.65]\charge{90=\.,-90=\.,180=\:,0=\:}{O})}\quad \rightarrow\quad
+\chemfig{\charge{-90=\:,90=\:}{C}(-[:-90,.65]\charge{90=\:,180=\:,0=\:}{O})}\quad \rightarrow\quad
+\chemfig{\charge{90=\:}{C}(=[:-90]\charge{180=\:,0=\:}{O})}\quad \rightarrow\quad
+\overset{\text{C不满足八隅体规则}}{\chemfig{\charge{180=\:}{O^{\oplus}}}\ce{->[==]}\chemfig{\charge{0=\:}{^{\oplus}C}}}$
 配位键:$\underset{\text{$\delta+/\delta-$部分电荷中心}}{\overset{\delta-}{\ce{C}}\ce{<-[==]}\overset{\delta+}{\ce{O}}}$
 
 NO(长命自由基):
-$\overset{7e^-}{N}=\underset{8e^-}{O}\quad 6-4-2=0$
+\chemfig{\charge{0=\:,-90=\:,180=\:}{O}(-[:-90,.65]\charge{90=\:,-90=\:,180=\.}{N})}$\quad \rightarrow\quad \overset{7e^-}{\chemfig{\charge{180=\.,-90=\:}{N}}}=\underset{8e^-}{\chemfig{\charge{90=\:,-90=\:,180=\:}{O}}}\quad 6-4-2=0$
 
 \subsection{总结}
 \label{sec:1.1.6}
@@ -158,7 +161,7 @@ $\qquad\qquad\underset{\text{进攻者}}{\overset{0\rightarrow+1}{\oplus}O}
 原子轨道简述，价层电子互斥理论，杂化轨道理论
 
 以$H_2O$的Lewis结构式为例
-$\chemfig{O(-[:-140]H)(-[:-40]H)}
+$\chemfig{\charge{90=\:,-90=\:}{O}(-[:-140]H)(-[:-40]H)}
 \begin{cases}
     \underset{\text{成键的本质?}\rightarrow Lewis \rightarrow VBT \rightarrow MO}{\text{优点:知道较为确切成键情况}} \\
     \text{缺点:}\underset{\text{杂化VSEPR}}{\underset{\downarrow}{\underset{\text{分子的$\underline{\text{空间结构}}$?}}{\text{运动范围未知}}}}
@@ -379,31 +382,25 @@ $\begin{cases}
     \begin{subcaptionbox}
         \centering
         \begin{tikzpicture}[baseline=(current bounding box.center),scale=.6]
-            \draw[draw=black] (1.3,1)ellipse (.3 and .6);
-            \chemfig[atom sep=2.4em]{N(-[:-90]H)(-[:180]H)(-[:0]H)};
+            \draw[draw=black] (1.3,.9)ellipse (.3 and .6);
+            \chemfig[atom sep=2.4em]{\charge{90=\:}{N}(-[:-90]H)(-[:180]H)(-[:0]H)};
             \draw[->] (3,0)--(5.5,0)node[above,pos=.5]{不考虑}node[below,pos=.5]{斥力大小};
-            \fill (1.4,.6) circle (1pt);
-            \fill (1.2,.6) circle (1pt);
         \end{tikzpicture}
     \end{subcaptionbox}
     \begin{subcaptionbox}
         \centering
         \begin{tikzpicture}[baseline=(current bounding box.center),scale=.6]
-            \draw[draw=black] (.9,1)ellipse (.3 and .6);
-            \chemfig[atom sep=2.4em]{N(-[:-80]H)(-[:-30]H)(-[:-130]H)};
+            \draw[draw=black] (.9,.9)ellipse (.3 and .6);
+            \chemfig[atom sep=2.4em]{\charge{90=\:}{N}(-[:-80]H)(-[:-30]H)(-[:-130]H)};
             \draw[->] (3.5,.2)--(5.5,.2);
-            \fill (1,.6) circle (1pt);
-            \fill (.8,.6) circle (1pt);
             \draw[<->] (1.5,-.2) arc (0:25:3)node[right,pos=.5]{$\underset{\text{实际107°}}{\text{109°}}$};
         \end{tikzpicture}
     \end{subcaptionbox}
     \begin{subcaptionbox}
         \centering
         \begin{tikzpicture}[baseline=(current bounding box.center),scale=.6]
-            \draw[draw=black] (.9,1)ellipse (.3 and .6);
-            \chemfig[atom sep=2.4em]{N(-[:-80]H)(-[:-30]H)(-[:-130]H)};
-            \fill (1,.6) circle (1pt);
-            \fill (.8,.6) circle (1pt);
+            \draw[draw=black] (.9,.9)ellipse (.3 and .6);
+            \chemfig[atom sep=2.4em]{\charge{90=\:}{N}(-[:-80]H)(-[:-30]H)(-[:-130]H)};
             \draw[<->] (1.5,-.2) arc (0:25:3)node[right,pos=.5]{$\theta_1$};
             \draw[<->] (1,-.5)--(.5,-.3)node[below,pos=.5]{$\theta_2$};
             \draw[-] (4,0)--(4,0)node[above,pos=.5]{$\theta_1>\theta_2$}node[below,pos=.5]{$\theta_2<109.5°$};
