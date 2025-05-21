@@ -10,11 +10,11 @@
 
 - :white_check_mark: 第一章
     - :white_check_mark: 1.1-1.3
-- :white_square_button: 第二章
-    - :white_check_mark: 2.1-2.4
-    - :white_square_button: 2.5
-- :black_square_button: 第三章
-    - :black_square_button: 3.1-3.4
+- :white_check_mark: 第二章
+    - :white_check_mark: 2.1-2.5
+- :white_square_button: 第三章
+    - :white_square_button: 3.1
+    - :black_square_button: 3.2-3.4
 
 ## [预览](main.pdf)
 
