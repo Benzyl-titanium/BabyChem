@@ -29,14 +29,39 @@
 
 ## 手动编译
 
-* VSCode拓展下载LaTeX Workshop
+* VSCode扩展下载LaTeX Workshop
 * 设置>搜索`Latex-workshop › Latex: Recipes`>在 settings.json 中编辑
 * 将内容替换成[.vscode/settings.json](.vscode/settings.json)
 * 在main.tex中`Ctrl`+`Alt`+`B`编译成PDF
 
+## to chemfig
+
+先看看效果吧，这是他生成的并打印出来的
+
+![test](imgs/DMT_test.png)
+
+```tex
+\chemfig{-[:312]N(-[:12])-[:252]-[:192]-[:252]=_[:306]-[:234]\mcfbelow{N}{H}-[:162]=^[:90](-[:18])-[:150]=^[:210]-[:270]=^[:330](-[:30])}
+```
+
+这是手写的并打印的
+
+![DMT](imgs/DMT.png)
+
+```tex
+\chemfig{*6(-=(*5(-{N}{H}-=(-(-[::-60](-[::60]N(-[::-60])(-[::60]))))--))-=-=)}
+```
+
+[Emacs](https://www.gnu.org/software/emacs/download.html)加上[tochemfig.el](tochemfig.el)这个插件后有很多选项功能具体查看[tochemfig](https://github.com/gicrisf/tochemfig)，不过他的代码的六元环和五元环的*6/*5没用上，感觉不精简？也可能是我没用完整他的插件，有个注意的就是Emacs的复制粘贴快捷键等都不是和win一样的，这点有点不习惯
+
+这个插件依赖于python和mol2chemfigPy3
+
+总得来说还是一个非常不错的软件和插件，所以我发现了宝藏，我会用他来打第一个模板，这里要致谢一下
+
 ## 致谢
 
 * [szaboqc](https://github.com/Usu171/szaboqc)
+* [tochemfig](https://github.com/gicrisf/tochemfig)
 
 ## 文件下载&讲解视频
 
